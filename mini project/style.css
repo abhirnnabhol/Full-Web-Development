@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Mono", monospace;
+}
+
+.main_box {
+  background-image: url("photo.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+.btn_one {
+  font-size: 30px;
+  position: absolute;
+  left: 16px;
+  line-height: 60px;
+  color: white;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.2s linear;
+}
+.btn_one:hover {
+  font-size: 40px;
+}
+.sidebar_menu {
+  position: fixed;
+  height: 100vh;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+  left: -300px;
+  transition:all 0.3s linear;
+}
+.sidebar_menu .btn_two {
+  position: absolute;
+  left: 250px;
+  top: 6px;
+  line-height: 60px;
+}
+.sidebar_menu .btn_two i {
+  font-size: 30px;
+  opacity: 0;
+  color: grey;
+  cursor: pointer;
+}
+.sidebar_menu .btn_two i:hover {
+  font-size: 40px;
+  color: grey;
+}
+.sidebar_menu .logo {
+  position: absolute;
+  font-size: 30px;
+  width: 100%;
+  height: 60px;
+}
+.sidebar_menu .logo a {
+  position: absolute;
+  top: 10px;
+  left: 60px;
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar_menu .menu {
+  position: absolute;
+  top: 70px;
+  width: 100%;
+}
+.sidebar_menu .menu ul li {
+  line-height: 50px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.sidebar_menu .menu ul li i {
+  color: white;
+  font-size: 20px;
+}
+
+.sidebar_menu .menu ul li a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+.sidebar_menu .social_media {
+  width: auto;
+  height: 50px;
+  line-height: 40px;
+  position: absolute;
+  bottom: 60px;
+  left: 80px;
+}
+
+.sidebar_menu .social_media a {
+  margin-right: 8px;
+  font-size: 20px;
+  color: grey;
+}
+.sidebar_menu .social_media a:hover {
+  font-size: 22px;
+  color: white;
+}
+
+.sidebar_menu .menu ul li:hover {
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+
+#check {
+  display: none;
+}
+#check:checked ~ .sidebar_menu {
+  left: 0;
+}
+#check:checked ~ .btn_one {
+  opacity: 0;
+}
+#check:checked ~ .sidebar_menu .btn_two i {
+  opacity: 1;
+}

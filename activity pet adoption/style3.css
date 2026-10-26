@@ -1,0 +1,35 @@
+.red{
+    width:100px;
+    height:100px;
+    background-color: red;
+    border:2px solid black;
+}
+.blue{
+    width:100px;
+    height:100px;
+    background-color:blue;
+    position:relative;
+    z-index:6;
+    bottom:50px;
+    border:2px solid black;
+}
+.green{
+    width:100px;
+    height:100px;
+    background-color:green;
+}
+.yellow{
+    width:100px;
+    height:100px;
+    background-color:yellow;
+}
+.pink{
+    width:100px;
+    height:100px;
+    background-color:pink;
+}
+.white{
+    width:100px;
+    height:100px;
+    background-color: white;
+}

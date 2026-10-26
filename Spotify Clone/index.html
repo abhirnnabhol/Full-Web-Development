@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+      integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./assets/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="sidebar">
+        <div class="nav-upper">
+          <div class="nav-content">
+            <i class="fa-solid fa-house"></i>
+            Home
+          </div>
+          <div class="nav-content">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            Search
+          </div>
+        </div>
+        <div class="library">
+          <div class="library-header">
+            <div class="nav-lower">
+              <div class="nav-lower-content">
+                <img src="./assets/library_icon.png" />
+                Your library
+              </div>
+              <div class="nav-lower-content">
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-library">
+              <h4>Create your first playlist</h4>
+              <p>it's easy we will help you</p>
+              <button type="button">Create playlist</button>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-library">
+              <h4>Let's find some podcasts to follow</h4>
+              <p>We will keep you updated on new episodes</p>
+              <button type="button">Create playlist</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="main-content-header">
+          <div class="fow-back-icons">
+            <button type="button" class="user">
+              <img src="./assets/backward_icon.png" />
+            </button>
+            <button type="button" class="user">
+              <img src="./assets/forward_icon.png" />
+            </button>
+          </div>
+          <div>
+            <button type="button">Explore Premium</button>
+            <button class="download" type="button">
+              <i class="fa-regular fa-circle-down"></i>
+              download
+            </button>
+            <button type="button" class="user">
+              <i class="fa-regular fa-user"></i>
+            </button>
+          </div>
+        </div>
+        <div class="main-content-body">
+          <h2>Recently Played</h2>
+          <div class="card-container">
+            <div class="card">
+              <img src="./assets/card1img.jpeg" />
+              <p class="title">Top 50-Global</p>
+              <p class="info">Your daily updates of the most played..</p>
+            </div>
+          </div>
+          <h2>Trending Songs</h2>
+          <div class="card-container">
+            <div class="card">
+              <img src="./assets/card2img.jpeg" />
+              <p class="title">Mahiye Jinna Sohna</p>
+              <p class="info">Darshan Raval..</p>
+            </div>
+            <div class="card">
+              <img src="./assets/card3img.jpeg" />
+              <p class="title">Mere Pass Tum Ho</p>
+              <p class="info">Rahat Fateh Ali Khan..</p>
+            </div>
+            <div class="card">
+              <img src="./assets/card4img.jpeg" />
+              <p class="title">Alter Ego</p>
+              <p class="info">Thalapathy Vijay..</p>
+            </div>
+          </div>
+          <h2>Recently Played</h2>
+          <div class="card-container">
+            <div class="card">
+              <img src="./assets/card5img.jpeg" />
+              <p class="title">Top Songs Global</p>
+              <p class="info">Your daily updates of the most played..</p>
+            </div>
+            <div class="card">
+              <img src="./assets/card6img.jpeg" />
+              <p class="title">Top Songs India</p>
+              <p class="info">Your daily updates of the most played..</p>
+            </div>
+            <div class="card">
+              <img src="./assets/card1img.jpeg" />
+              <p class="title">Top 50-Global</p>
+              <p class="info">Your daily updates of the most played..</p>
+            </div>
+          </div>
+        </div>
+        <div class="main-content-footer"></div>
+      </div>
+      <div class="playback">
+        <div class="song-name">
+          <img src="./assets/Daylight.jpeg" />
+          <div class="name">
+            <div class="playing-song-name">Daylight</div>
+            <div class="playing-song-writter">David Kushner</div>
+          </div>
+          <i class="fa-regular fa-heart"></i>
+          <i class="fa-regular fa-window-maximize"></i>
+        </div>
+        <div class="song-control">
+          <div class="icons">
+            <img src="./assets/player_icon1.png" class="icon" />
+            <img src="./assets/player_icon2.png" class="icon" />
+            <img src="./assets/player_icon3.png" class="icon pause" />
+            <img src="./assets/player_icon4.png" class="icon" />
+            <img src="./assets/player_icon5.png" class="icon" />
+          </div>
+          <div class="range-video">
+            <input type="range" min="0" max="100" class="progress-bar" />
+          </div>
+        </div>
+        <div class="setting">
+          <div class="element">
+            <i class="fa-solid fa-microphone-lines"></i>
+            <i class="fa-solid fa-list"></i>
+            <i class="fa-solid fa-laptop"></i>
+            <i class="fa-solid fa-volume-high"></i>
+            <input type="range">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
